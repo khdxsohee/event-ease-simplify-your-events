@@ -18,15 +18,20 @@
     </nav>
   </header>
 
-  <section class="intro">
-    <h2>Plan. Host. Enjoy.</h2>
-    <p>Discover and manage events effortlessly with EventEase.</p>
+  <section class="search-filter">
+    <input type="text" id="searchInput" placeholder="Search events..." />
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="Music">Music</option>
+      <option value="Tech">Tech</option>
+      <option value="Art">Art</option>
+    </select>
   </section>
 
   <section class="events">
     <h3>Upcoming Events</h3>
     <div class="event-cards" id="eventList">
-      <!-- Event cards inserted by JS -->
+      <!-- JS will insert cards here -->
     </div>
   </section>
 
@@ -35,8 +40,11 @@
       <span class="close" id="closeModal">&times;</span>
       <h3 id="modalTitle"></h3>
       <p id="modalDesc"></p>
+      <button id="registerBtn">Register Now</button>
     </div>
   </div>
+
+  <div id="toast">Registered successfully!</div>
 
   <footer>
     <p>&copy; 2025 EventEase. All rights reserved.</p>
